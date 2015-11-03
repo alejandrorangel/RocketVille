@@ -4,13 +4,18 @@
 "use strict";
 
 var District = require("./District.js");
+var Capitol = require("./Capitol.js");
 
 class Board {
     constructor(districts) {
 
         var mDistricts = [];
         districts.forEach(function (district) {
-            var mDistrict = new District(district.neighborhood, district.type);
+            var mDistrict;
+            if (district.capitol)
+                mDistrict = new Capitol(district.neighborhood, district.type);
+            else
+                mDistrict = new District(district.neighborhood, district.type);
 
             mDistricts.push(mDistrict);
         });
@@ -48,9 +53,9 @@ class Board {
             districts.forEach(function (district) {
 
                 if (!result[district.winner]) {
-                    result[district.winner] = 1;
+                    result[district.winner] = district.value;
                 } else {
-                    result[district.winner] = result[district.winner] + 1;
+                    result[district.winner] = result[district.winner] + district.value;
                 }
             });
         }

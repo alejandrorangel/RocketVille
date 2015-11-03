@@ -17,6 +17,10 @@ class District {
         return this.player;
     }
 
+    get value() {
+        return 1;
+    }
+
 }
 
 module.exports = District;

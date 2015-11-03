@@ -5,7 +5,8 @@ module.exports = [
     {
         neighborhood: "Robo Alley",
         type: "",
-        bonus: null
+        bonus: null,
+        capitol: true
     },
     {
         neighborhood: "Robo Alley",
@@ -35,7 +36,8 @@ module.exports = [
     {
         neighborhood: "Gravtrain",
         type: "",
-        bonus: null
+        bonus: null,
+        capitol: true
     },
     {
         neighborhood: "Gravtrain",
@@ -80,7 +82,8 @@ module.exports = [
     {
         neighborhood: "Jetway",
         type: "",
-        bonus: null
+        bonus: null,
+        capitol: true
     },
     {
         neighborhood: "Jetway",
@@ -100,7 +103,8 @@ module.exports = [
     {
         neighborhood: "Astro Hills",
         type: "",
-        bonus: null
+        bonus: null,
+        capitol: true
     },
     {
         neighborhood: "Astro Hills",
@@ -125,7 +129,8 @@ module.exports = [
     {
         neighborhood: "Chrome Way",
         type: "",
-        bonus: null
+        bonus: null,
+        capitol: true
     },
     {
         neighborhood: "Chrome Way",
@@ -165,7 +170,8 @@ module.exports = [
     {
         neighborhood: "Spaceport",
         type: "",
-        bonus: null
+        bonus: null,
+        capitol: true
     },
     {
         neighborhood: "Spaceport",
