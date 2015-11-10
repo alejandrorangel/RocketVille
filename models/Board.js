@@ -44,13 +44,9 @@ class Board {
 
     resultsOf(neighborhood) {
         var mDistritcs = this.districtsOfNeighborhood(neighborhood);
-        return this.occurrence(mDistritcs);
-    }
-
-    occurrence(districts) {
         var result = [];
-        if (districts instanceof Array) {
-            districts.forEach(function (district) {
+        if (mDistritcs instanceof Array) {
+            mDistritcs.forEach(function (district) {
 
                 if (!result[district.winner]) {
                     result[district.winner] = district.value;
@@ -62,8 +58,14 @@ class Board {
         return result;
     }
 
-;
+    districtWinner(results) {
+        results = results.sort(function (a, b) {
+            console.log("hola");
+            return b.value - a.value;
+        });
 
-
+        return results;
+    }
 }
+
 module.exports = Board;

@@ -13,4 +13,5 @@ board.districts.forEach(function (mDistrict) {
 board.neighborhoods.forEach(function (neighborhood) {
     console.log(neighborhood);
     console.log(board.resultsOf(neighborhood));
+    console.log(board.districtWinner(board.resultsOf(neighborhood)));
 });
