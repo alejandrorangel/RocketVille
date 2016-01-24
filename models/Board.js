@@ -2,7 +2,6 @@
  * Created by Alejandro on 11/1/2015.
  */
 "use strict";
-
 var District = require("./District.js");
 var Capitol = require("./Capitol.js");
 
@@ -48,7 +47,7 @@ class Board {
     }
 
     occurrence(districts) {
-        var result = [];
+        var result = {};
         if (districts instanceof Array) {
             districts.forEach(function (district) {
 
@@ -62,7 +61,23 @@ class Board {
         return result;
     }
 
-;
+
+    //TODO This can be improve
+    neighborhoodWinner(neighborhood) {
+        var mWinner = {};
+        mWinner.amount = 0;
+        mWinner.winner = "";
+        var resultOfNeighborhood = this.resultsOf(neighborhood);
+        for (var player in resultOfNeighborhood) {
+            if (resultOfNeighborhood[player] > mWinner.amount) {
+                mWinner.winner = player;
+                mWinner.amount = resultOfNeighborhood[player];
+
+            }
+        }
+
+        return mWinner;
+    }
 
 
 }

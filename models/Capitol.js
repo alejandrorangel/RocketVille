@@ -3,6 +3,7 @@
  */
 "use strict";
 var District = require("./District.js");
+
 class Capitol extends District {
 
     get value() {
