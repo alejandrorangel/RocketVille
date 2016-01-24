@@ -2,6 +2,7 @@
  * Created by Alejandro on 11/1/2015.
  */
 "use strict";
+
 var District = require("./District.js");
 var Capitol = require("./Capitol.js");
 
