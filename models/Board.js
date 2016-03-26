@@ -51,7 +51,6 @@ class Board {
         var result = {};
         if (districts instanceof Array) {
             districts.forEach(function (district) {
-
                 if (!result[district.winner]) {
                     result[district.winner] = district.value;
                 } else {
@@ -65,9 +64,10 @@ class Board {
 
     //TODO This can be improve
     neighborhoodWinner(neighborhood) {
+        debugger;
         var mWinner = {};
         mWinner.amount = 0;
-        mWinner.winner = "";
+        mWinner.winner = null;
         var resultOfNeighborhood = this.resultsOf(neighborhood);
         for (var player in resultOfNeighborhood) {
             if (resultOfNeighborhood[player] > mWinner.amount) {

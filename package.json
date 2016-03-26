@@ -1,10 +1,12 @@
 {
-  "name": "untitled",
+  "name": "RocketVille",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./app.js"
+    "start": "node ./index.js"
   },
   "dependencies": {
+    "express": "^4.13.4",
+    "kraken-js": "^2.1.0"
   }
 }
